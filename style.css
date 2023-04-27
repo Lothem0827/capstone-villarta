@@ -156,3 +156,36 @@ h1 {
   overflow: hidden;
 }
 /* Gallery */
+
+/* Customize modal */
+.modal {
+  background-color: rgba(9, 9, 9, 50%);
+}
+
+.modal-content {
+  background-color: var(--image-card-bg);
+  border: var(--border-value) solid var(--border) !important;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="text"] {
+  background-color: transparent;
+  border: var(--border-value) solid var(--border) !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea[type="text"]:focus {
+  background-color: transparent;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.btn-modal {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+/* End of modal */
