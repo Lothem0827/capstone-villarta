@@ -1,0 +1,158 @@
+/* CSS Variables */
+:root {
+  --dark: #090909;
+  --light: #dcdcdc;
+  --border: #242424;
+  --primary: #95ff00;
+  --muted: #7b7b7b;
+  --image-card-bg: #0f0f0f;
+
+  --border-value: 1px;
+
+  --bg-image: url("./assets/backgrounds/gradient-bg.svg");
+}
+/* End of CSS variables */
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: "Inter", sans-serif;
+  color: var(--light);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: inherit;
+}
+
+p {
+  font-size: 26px;
+  color: var(--muted);
+  line-height: 125%;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: clamp(70px, 8.5vw, 9vw);
+  line-height: 106%;
+}
+
+/* Custom utility classes */
+.color-primary {
+  color: var(--primary);
+}
+
+.color-border {
+  color: var(--border);
+}
+
+.color-muted {
+  color: var(--muted);
+}
+
+.border-top-bottom {
+  border-top: var(--border-value) solid var(--border) !important;
+  border-bottom: var(--border-value) solid var(--border) !important;
+}
+
+.text-banner {
+  background-color: var(--primary);
+  color: var(--dark);
+  white-space: nowrap;
+}
+
+.text-highlight {
+  color: var(--light);
+}
+
+.h-full {
+  min-height: 100vh;
+}
+
+.text-link {
+  color: var(--border);
+}
+
+.closing-tag {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(90px, 8.5vw, 9vw);
+  font-weight: bold;
+}
+
+.heading-padding-xl {
+  padding-top: 20vh;
+}
+
+.heading-padding {
+  padding-top: 10vh;
+}
+
+.aspect-ration1x1 {
+  aspect-ratio: 1 / 1;
+}
+/* End of Custom utility classes */
+
+/* Navbar customization */
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.nav-item:hover {
+  background-color: var(--muted);
+}
+
+.navbar .nav-link {
+  color: var(--light) !important;
+}
+
+.border {
+  border: var(--border-value) solid var(--border) !important;
+}
+
+.border-bottom {
+  border-bottom: var(--border-value) solid var(--border) !important;
+}
+/* End of Navbar customization */
+
+/* Landing Page customization */
+#landing-page {
+  background: rgb(149, 255, 0);
+  background: linear-gradient(
+    207deg,
+    rgba(149, 255, 0, 0.15730042016806722) 0%,
+    rgba(9, 9, 9, 1) 63%
+  );
+}
+/* End of Landing page customization */
+
+/* Gallery customization */
+.gallery-card {
+  background-color: var(--image-card-bg);
+
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-card-item {
+  overflow: hidden;
+}
+/* Gallery */
