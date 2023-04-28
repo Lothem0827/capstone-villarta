@@ -22,7 +22,7 @@ body {
   background-color: var(--dark);
   font-family: "Inter", sans-serif;
   color: var(--light);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1,
