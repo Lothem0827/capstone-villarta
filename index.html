@@ -73,16 +73,36 @@
     </nav>
     <!-- End of Navigation -->
 
-    <!-- Landing page -->
+    <!-- landing page section -->
+    <!-- <section id="landing-page">
+      <div
+        class="p-md-5 p-4 d-flex flex-column justify-content-end align-items-end h-full gradient-bg"
+      >
+        <div class="m-auto position-relative">
+          <h1 class="text-wrap main-heading text-center">
+            <span class="color-primary">hey</span> i'm Carl
+          </h1>
+          <h1 class="text-wrap main-heading text-center">
+            Glad<span class="color-primary"> You're here!</span>
+          </h1>
+
+          <div class="position-absolute ball">
+            <img class="img-fluid" src="./assets/backgrounds/ball.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end of landing page section -->
+
+    <!-- About me page -->
     <section
-      id="landing-page"
-      class="d-flex flex-column justify-content-end border-bottom h-full"
+      class="gradient-bg d-flex flex-column justify-content-end border-bottom h-full"
     >
       <div class="">
         <!-- Big Heading -->
         <div class="p-md-5 p-4">
           <div class="d-flex justify-content-between align-items-center">
-            <h1 class="text-wrap">
+            <h1 class="text-wrap main-heading">
               <span class="color-primary">Designer</span> &
               <span class="color-primary">Developer</span>
               Based in Cebu, Ph.
@@ -120,7 +140,7 @@
         <!-- Short Description -->
         <div class="container-fluid py-5">
           <div class="row px-md-5 px-4 d-flex align-items-center">
-            <div class="col-lg-4 col-md-8 col-12 p-0">
+            <div class="col-lg-4 col-md-12 col-12 p-0">
               <p>
                 I’m <span class="text-highlight">Carl</span>, a Visual Designer
                 & Developer with a keen eye for detail and a
@@ -130,8 +150,8 @@
                 and user-friendly <span class="text-highlight">websites</span>.
               </p>
             </div>
-            <div class="col-lg-8 col-md-4 col-12 p-0">
-              <h3 class="text-md-right">
+            <div class="col-lg-8 col-md-12 col-12 p-0 pt-lg-0 pt-4">
+              <h3 class="text-lg-right">
                 <a
                   href="https://drive.google.com/drive/folders/1OAv6igCFu5bF5iJ3dt7A-VtAaoYeaQaH"
                   target="_blank"
@@ -144,16 +164,20 @@
         <!-- End of Short Description -->
       </div>
     </section>
-    <!-- End of Landing page -->
+    <!-- End of about me page -->
 
     <!-- Gallery -->
     <section id="gallery" class="heading-padding">
       <div class="row p-md-5 p-4 d-flex align-items-center">
-        <div class="col-md-6 col-12 pb-md-0 pb-3">
+        <div class="col-md-10 col-12 pb-md-0 pb-3">
           <h1 class=""><span class="color-primary">the</span> gallery</h1>
         </div>
-        <div class="col-md-6 d-none d-lg-inline text-md-right">
-          <img src="./assets/icons/arrow-down.svg" alt="Arrow down" />
+        <div class="col-md-2 d-none d-md-inline text-md-right">
+          <img
+            class="img-fluid"
+            src="./assets/icons/arrow-down.svg"
+            alt="Arrow down"
+          />
         </div>
       </div>
 
@@ -243,7 +267,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 p-lg-3 p-4">
+          <div class="col-md-6 col-lg-3 p-lg-3 p-4 d-none d-md-block">
             <div class="border gallery-card rounded d-flex p-4">
               <div class="w-100 h-100 bg-light rounded gallery-card-item">
                 <img
@@ -254,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 p-lg-3 p-4">
+          <div class="col-md-6 col-lg-3 p-lg-3 p-4 d-none d-md-block">
             <div class="border gallery-card rounded d-flex p-4">
               <div class="w-100 h-100 bg-light rounded gallery-card-item">
                 <img
@@ -272,17 +296,20 @@
       <!-- Details -->
       <div class="container-fluid text-uppercase">
         <div
-          class="px-md-5 py-md-4 p-4 border-top-bottom row d-flex justify-content-between"
+          class="px-md-5 py-md-4 p-4 border-top-bottom row d-flex justify-content-center justify-content-md-between"
         >
-          <div class=""></div>
+          <div class="d-none d-md-inline"></div>
           <h3>
             <a href="./gallery.html"
               ><span class="color-primary">/</span> View all from gallery</a
             >
           </h3>
-          <div class="">
+          <div class="d-none d-md-inline">
             <a href="./gallary.html">
-              <img src="./assets/icons/arrow-right.svg" alt="Arrow down"
+              <img
+                class="img-fluid"
+                src="./assets/icons/arrow-right.svg"
+                alt="Arrow down"
             /></a>
           </div>
         </div>
@@ -294,12 +321,12 @@
     <!-- Contact -->
     <section
       id="contact"
-      class="heading-padding d-flex flex-column justify-content-between h-full"
+      class="gradient-bg heading-padding d-flex flex-column justify-content-between h-full"
     >
       <div class="pb-5">
         <!-- Big Heading -->
         <div class="p-md-5 p-4">
-          <h1 class="text-wrap text-center">
+          <h1 class="text-wrap text-md-center">
             We can
             <span class="color-primary">accomplish amazing things</span>
             together!
@@ -310,22 +337,22 @@
         <!-- Details -->
         <div class="container-fluid text-uppercase">
           <div class="px-md-5 py-md-3 p-4 border-top-bottom row">
-            <div class="col-md-3 p-0">
+            <div class="col-md-3 col-6 p-0">
               <a href="https://www.behance.net/pixelinedesign" target="_blank"
                 ><span class="color-primary">/</span> behance</a
               >
             </div>
-            <div class="col-md-3 px-0 px-md-3">
+            <div class="col-md-3 col-6 px-0 px-md-3 text-md-left text-right">
               <a href="https://dribbble.com/Pixeline" target="_blank"
                 ><span class="color-primary">/</span> dribbble</a
               >
             </div>
-            <div class="col-md-3 px-0 px-md-3 text-md-right">
+            <div class="col-md-3 col-6 px-0 px-md-3 text-md-right">
               <a href="https://gitlab.com/DevCarl" target="_blank"
                 ><span class="color-primary">/</span> gitlab</a
               >
             </div>
-            <div class="col-md-3 text-md-right p-0">
+            <div class="col-md-3 col-6 text-right p-0">
               <a href="https://github.com/Lothem0827" target="_blank"
                 ><span class="color-primary">/</span> github</a
               >
@@ -368,7 +395,7 @@
 
       <!-- Modal -->
       <div
-        class="modal fade"
+        class="modal fade p-2"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"

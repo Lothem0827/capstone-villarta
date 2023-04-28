@@ -56,7 +56,22 @@ h1 {
   line-height: 106%;
 }
 
+::selection {
+  color: var(--dark);
+  background: var(--primary);
+}
+
 /* Custom utility classes */
+.ball {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  mix-blend-mode: color-dodge;
+}
+.main-heading {
+  min-width: 10ch;
+}
 .color-primary {
   color: var(--primary);
 }
@@ -85,7 +100,7 @@ h1 {
 }
 
 .h-full {
-  min-height: 100vh;
+  min-height: clamp(900px, 100vh, 2000px);
 }
 
 .text-link {
@@ -114,11 +129,15 @@ h1 {
 /* Navbar customization */
 .navbar {
   background: transparent;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
 }
 
 .nav-item:hover {
-  background-color: var(--muted);
+  background-color: var(--primary);
+}
+
+.navbar .nav-link:hover {
+  color: var(--dark) !important;
 }
 
 .navbar .nav-link {
@@ -135,14 +154,17 @@ h1 {
 /* End of Navbar customization */
 
 /* Landing Page customization */
-#landing-page {
+.gradient-bg {
   background: rgb(149, 255, 0);
-  background: linear-gradient(
-    207deg,
-    rgba(149, 255, 0, 0.15730042016806722) 0%,
-    rgba(9, 9, 9, 1) 63%
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #0066ff 0%,
+    rgba(0, 102, 255, 0.08) 0.01%,
+    rgba(0, 102, 255, 0) 100%,
+    rgba(0, 102, 255, 0) 100%
   );
-  /* url("./assets/backgrounds/noise.svg"); */
+
+  /* 5 */
 }
 /* End of Landing page customization */
 
